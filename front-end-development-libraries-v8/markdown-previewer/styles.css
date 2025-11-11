@@ -1,0 +1,82 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg, #eef2f7 0%, #f9fbff 100%);
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.panel {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 6px 18px rgba(26, 39, 61, 0.08);
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  color: #1b2430;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#editor {
+  flex: 1;
+  width: 100%;
+  resize: vertical;
+  min-height: 220px;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #e6e9ef;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #0b1220;
+}
+
+#preview {
+  flex: 1;
+  overflow: auto;
+  padding: 0.5rem 0.25rem;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: #111827;
+}
+
+#preview h1 { font-size: 1.6rem; margin: .4rem 0; }
+#preview h2 { font-size: 1.25rem; margin: .35rem 0; color: #1f2937; }
+#preview p { margin: 0.35rem 0; }
+#preview pre {
+  background: #0b1220;
+  color: #d1d5db;
+  padding: 0.8rem;
+  border-radius: 6px;
+  overflow: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+  font-size: 0.9rem;
+}
+#preview code { background: #f3f4f6; padding: .15rem .35rem; border-radius: 4px; font-family: inherit; }
+#preview blockquote { border-left: 4px solid #c7d2fe; padding-left: .75rem; color: #374151; margin: .5rem 0; background: #f8fafc; border-radius: 4px; }
+
+@media (max-width: 860px) {
+  .container { grid-template-columns: 1fr; }
+}

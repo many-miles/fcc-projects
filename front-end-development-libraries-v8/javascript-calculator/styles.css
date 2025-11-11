@@ -1,0 +1,67 @@
+*{box-sizing:border-box}
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;
+  background:linear-gradient(180deg,#eef2f7 0%,#f9fbff 100%);
+  padding:2rem;
+}
+#calculator{
+  width:100%;
+  max-width:420px;
+  background:#0f1724;
+  color:#fff;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(2,6,23,0.45);
+  padding:1rem;
+}
+.display-wrap{
+  background:#091226;
+  border-radius:8px;
+  padding:0.75rem;
+  text-align:right;
+  margin-bottom:0.75rem;
+  min-height:64px;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  font-size:1.6rem;
+  overflow:hidden;
+  word-break:break-all;
+}
+#display{
+  width:100%;
+  color:#e6eef6;
+}
+.controls{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:0.5rem;
+}
+.button{
+  background:linear-gradient(180deg,#1f2937,#111827);
+  border-radius:8px;
+  padding:0.8rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.05rem;
+  font-weight:700;
+  cursor:pointer;
+  user-select:none;
+  border:1px solid rgba(255,255,255,0.04);
+  transition:transform .06s ease;
+}
+.button:active{transform:translateY(2px)}
+.button.op{background:linear-gradient(180deg,#0ea5a4,#0b8f8d);color:#021217}
+.button.clear{background:linear-gradient(180deg,#ef4444,#dc2626);color:#fff}
+.button.equals{grid-column:span:2;background:linear-gradient(180deg,#7c3aed,#5b21b6);color:#fff}
+.grid-wide{grid-column:span:2}
+@media (max-width:420px){
+  #calculator{padding:0.75rem}
+  .button{padding:0.65rem;font-size:0.95rem}
+  .display-wrap{font-size:1.25rem}
+}

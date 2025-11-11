@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 20px;
+  background: #f7f7f7;
+}
+
+#chart-container {
+  width: 800px;
+}
+
+#chart {
+  width: 100%;
+  height: 500px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.bar {
+  fill: #2a9d8f;
+}
+
+.bar:hover {
+  fill: #e76f51;
+}
+
+#tooltip {
+  position: absolute;
+  background: #264653;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  opacity: 0;
+  pointer-events: none;
+  font-size: 12px;
+}

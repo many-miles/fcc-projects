@@ -1,0 +1,8 @@
+character_id,name,homeland,favorite_color,more_info_id,birthday,height_in_cm,weight_in_kg
+1,Mario,Mushroom Kingdom,Red,1,1981-07-09,155,64.5
+2,Luigi,Mushroom Kingdom,Green,2,1983-07-14,175,48.8
+3,Peach,Mushroom Kingdom,Pink,7,1985-10-18,173,52.2
+4,Toad,Mushroom Kingdom,Blue,10,1985-10-18,66,35.6
+5,Bowser,Koopa Kingdom,Yellow,11,1990-10-29,258,300.0
+6,Daisy,Sarasaland,Orange,15,1989-07-31,,
+7,Yoshi,Dinosaur Land,Green,16,1990-04-13,162,59.1
